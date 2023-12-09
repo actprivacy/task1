@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9b6b6e3d20.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        <nav>
+            <img src="imag/nidhi logo.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#about">Skills</a></li>
+                <li><a href="#project">Portfolio</a></li>
+                <li><a href="#Portfolio">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Hello,I'm </p>
+            <h1><span>Nidhi</span> Kumari</h1>
+            <h2>And I'm a <span class="text"></span></h2>
+            <p> Frontent design</p>
+        </div>
+
+    </div>
+
+ <!-- ---------about------------ -->  
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="imag/slide2.png" >
+
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hey everyone, I am Nidhi. I am an undergraduate, 
+                    currently pursuing Computer Science engineering from LNCT Bhopal.<br>
+                    I am a fontend developer who loves to create attractive and responsive
+                     websites using contemporary tools and technologies.
+                    I am also a tech enthusiast and I like to explore the
+                     latest advancement in technology around the globe and that 
+                     is why I want to make meaningful contributions in the fields of Machine Learning
+                      and Artificial Intelligence </p>
+                       
+                      <div class="tab-tittles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        
+                      </div>
+                      <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br>Experience</li>
+                            <li><span>CSS</span><br>Intermediate</li>
+                            <li><span>OOPS</span><br>Intermediate</li>
+                            <li><span>Python</span><br>Intermediate</li>
+                            <li><span>DSA</span><br>Intermediate</li>
+                            <li><span>MOngoDB</span><br>Getting Started</li>
+                            <li><span>Machine Learning</span><br>Getting Started</li>
+                        </ul>
+
+                      </div>     
+                      <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>1+Years</span><br>Frontent Development</li>
+                             </ul>
+
+                      </div>     
+                      <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech</span><br>Computer Science<br>(2 Year)</li>
+                            </ul>
+
+                      </div>     
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!------------projects----------------->
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="imag/cv-resume.avif">
+                <div class="layer">
+                    
+                    <h3> My Portfolio</h3>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+
+    </div>
+</div>
+<!----------------contact--------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>kumarinidhirani@gmail.com</p>
+                
+               <div class="social-icons">
+                   <a href="www.linkedin.com/in/nidhi-kumari-a6426a285"><i class="fa-brands fa-linkedin"></i></a>
+
+               </div>
+               <a href="imag/NidhiKumari_InternshalaResume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit"class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright # 2023 Nidhi Kumari.<i class="fa-solid fa-heart"></i> All Right Reserved. </p>
+
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+           tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");  
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+
+
+
+    
+</body>
+</html>
+
+
